@@ -8,7 +8,7 @@ lazy val root = project
 
     scalaVersion := dottyVersion,
 
-    scalacOptions ++= Seq("-language:implicitConversions", "-deprecation"),
+    scalacOptions ++= Seq("-language:implicitConversions"),
 
     // Contains Spark 3 snapshot built against 2.13: https://github.com/smarter/spark/tree/scala-2.13
     resolvers += Resolver.bintrayRepo("smarter", "maven"),
