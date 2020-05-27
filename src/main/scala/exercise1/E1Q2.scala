@@ -19,12 +19,12 @@ object E1Q2 {
 
 
 
-    // val itemsSoldLastBlackFriday: Int = ???
+    val itemsSoldLastBlackFriday: Int = ???
 
-    // /*
+    /*
     val itemsSoldLastBlackFriday: Int =
       orders.filter(order => isLastBlackFriday(order.date)).map(_.itemIds.size).reduce(_ + _)
-    // */
+    */
 
 
 

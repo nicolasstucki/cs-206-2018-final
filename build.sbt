@@ -16,6 +16,9 @@ lazy val root = project
     libraryDependencies ++= Seq(
       "com.novocode" % "junit-interface" % "0.11" % Test,
       ("org.apache.spark" %% "spark-core" % "3.0.0-X1").withDottyCompat(scalaVersion.value),
-    )
-
-  )
+    ),
+    
+    // Without forking, ctrl-c doesn't actually fully stop Spark
+    fork in run := true,
+    fork in Test := true
+)
