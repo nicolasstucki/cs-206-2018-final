@@ -2,6 +2,9 @@ package exercise3
 
 object E3Q1 {
 
+  // [.................]
+  //  |--|
+
   class MyQueue(maxSize: Int) extends JobQueue(maxSize) {
     var front = 0
     var size = 0
@@ -29,9 +32,10 @@ object E3Q1 {
     }
   }
 
-// The implementation doesn’t obey the specification.
-// We should change the first line in put and take to while.
-// This is because when a thread is weaken up, the test condition 
-// cannot be guaranteed, thus a while is needed.
-  
+  /* Solution
+    The implementation doesn’t obey the specification.
+    We should change the first line in put and take to while.
+    This is because when a thread is weaken up, the test condition 
+    cannot be guaranteed, thus a while is needed.
+  */
 }
